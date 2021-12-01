@@ -1,16 +1,22 @@
 import random
-x = input("Saisissez un nombre : ")
 
 a = random.randint(1, 100)
+a = int(a)
+
+x = input("Saisissez un nombre : ")
+x = int(x)
+
 
 while x != a:
     if x > a:
-        print("Le chiffre est moins grand.")
-        x = input("\nSaisissez un nombre : ")
+        print("Le nombre est moins grand.")
+        x = input("\nSaisissez un autre nombre : ")
+        x = int(x)
     elif x < a:
-        print("Le chiffre est plus grand.")
-        x = input("\nSaisissez un nombre : ")
+        print("Le nombre est plus grand.")
+        x = input("\nSaisissez un autre nombre : ")
+        x = int(x)
     else:
         break
-print("Vous avez saisi le chiffre correct.")
+print("Bravo ! Vous avez saisi le nombre correct.")
 
